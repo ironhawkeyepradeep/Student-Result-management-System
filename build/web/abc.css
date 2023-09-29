@@ -1,0 +1,47 @@
+#mymenu
+{
+background-color:rgba(0,0,0,0.7);
+color:white;
+text-align:right;
+}
+body {
+    height: 100%; 
+
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#mymenu ul li
+{
+display:inline-block;
+padding:12px;
+}
+a{
+color:white;
+}
+#data
+{
+margin-top:100px;
+}
+table
+{
+color:white;
+background-color:rgba(0,0,0,0.5);
+box-shadow:20px 20px 20px black;
+font-size:25px;
+}
+.A
+{
+border-radius:30px;
+}
+.B
+{
+width:80px;
+height:40px;
+background:linear-gradient(red,black);
+color:white;
+}
+.B:hover
+{
+background:linear-gradient(to right,red,black);
+}

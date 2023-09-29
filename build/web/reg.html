@@ -1,0 +1,68 @@
+<html>
+<head>
+<link rel="stylesheet" href="abc.css">
+<script>
+function Demo()
+{
+    var r1=/^[a-zA-Z]{5,15}$/;
+    var r2=/^w[a-zA-Z]{8,15}$/;
+ x=document.getElementById('t1').value;
+ y=document.getElementById('t2').value;
+ 
+ if(r1.test(x)&&r2.test(y))
+ {
+   alert("Welcome");   
+            form1.submit();
+ }
+ else
+ {
+ if(r1.test(x)!=true)
+alert("user name should be greater than 4");
+else
+alert("password name should be greater than 7");
+
+// document.getElementById('s1').innerHTML="INVALID  USER NAME";            
+ }
+ }
+</script>
+</head>
+<body background="bg3.jpg">
+<!-- <div id="mymenu"> -->
+<div id="mymenu">
+<ul>
+<li><a href="login.html" >Home</a></li>
+<li> <a href="login.html">Login </a></li>
+<li>  <a href="reg.html">Registration</a></li>
+<li> Contact</li>
+<li> <a href='logout'> Logout</a></li>
+</ul>
+</div>
+<!-- </div> -->
+<div id="data">
+<center>
+<form action="servlet1" name="form1">
+<table cellpadding="20">
+<caption> Registration Page</caption>
+<tr>
+<td>Enter Name </td>
+<td><input type="text" placeholder="Enter Name" name="un" id="t1" class="A"></td>
+</tr>
+<tr>
+<td>Enter Pass </td>
+<td><input type="password" placeholder="Enter password" name="up" id="t2" class="A"></td>
+</tr> 
+<!-- <tr> -->
+<!-- <td>Enter Contact No. </td> -->
+<!-- <td><input type="text" placeholder="Enter Contact-No."></td> -->
+<!-- </tr><tr> -->
+<!-- <td>Enter Email-id </td> -->
+<!-- <td><input type="text" placeholder="Enter Email-id"></td> -->
+<!-- </tr> -->
+<tr>
+    <th colspan="2"> <input type="button" class="B" onclick="Demo()" value="Registration"></th>
+</tr>
+</table>
+</center>
+</div>
+</body>
+</html>

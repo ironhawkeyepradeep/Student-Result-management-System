@@ -1,0 +1,59 @@
+<html>
+
+<head>
+<link rel="stylesheet" href="abc.css">
+<script type="text/javascript">
+function Demo()
+{
+ x=document.getElementById('t1').value;
+ y=document.getElementById('t2').value;
+ 
+ if(x.length>=2&&y.length>=5)
+ {
+      document.getElementById('s1').innerHTML="WelCome";   
+ form1.submit();
+ }
+ else
+ {
+alert("Invalid user name or Password");
+form1.reset();
+// document.getElementById('s1').innerHTML="INVALID  USER NAME";            
+ }
+ }
+</script>
+</head>
+<body background="bg2.jpg">
+<!-- <div id="mymenu"> -->
+<div id="mymenu">
+<ul>
+<li><a href="login.html" >Home</a></li>
+<li> <a href="login.html">Login </a></li>
+<li>  <a href="reg.html">Registration</a></li>
+<li> Contact</li>
+</ul>
+</div>
+<!-- </div> -->
+<div id="data">
+<center>
+<form action="lg" name="form1">
+<table cellpadding="20" >
+<caption> LogIn Page</caption>
+<tr>
+<td>Enter Name </td>
+<td><input type="text" placeholder="Enter Name"  id="t1" name="un"   class="A"></td>
+</tr>
+<tr>
+<td>Enter Pass </td>
+<td><input type="password" placeholder="Enter password" id="t2" name="up"   class="A"></td>
+</tr>
+<tr>
+    <th colspan="2"> <input type="button"  value="LogIn" onclick="Demo()" class="B" ></th>
+</tr>
+<tr>
+<th colspan="2"><p id="s1"> </p> </th>
+</tr>
+</table>
+</center>
+</div>
+
+</html>
